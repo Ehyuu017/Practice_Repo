@@ -55,7 +55,7 @@ public class DashboardFrame extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jTextFieldIS = new javax.swing.JTextField();
         jTextFieldEnum = new javax.swing.JTextField();
-        jTextFieldFullName = new javax.swing.JTextField();
+        jTextFieldLastName = new javax.swing.JTextField();
         jTextFieldBirthday = new javax.swing.JTextField();
         jTextFieldAddress = new javax.swing.JTextField();
         jTextFieldPhoneN = new javax.swing.JTextField();
@@ -71,6 +71,8 @@ public class DashboardFrame extends javax.swing.JFrame {
         jButtonDelete = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableinfo = new javax.swing.JTable();
+        jLabel14 = new javax.swing.JLabel();
+        jTextFieldFirstName = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -98,7 +100,7 @@ public class DashboardFrame extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 102, 102));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 550, 1130, 60));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 1130, 40));
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createMatteBorder(4, 4, 4, 4, new java.awt.Color(255, 102, 102)), "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 12), new java.awt.Color(255, 102, 102))); // NOI18N
@@ -107,62 +109,62 @@ public class DashboardFrame extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 102, 102));
         jLabel2.setText("Intermediate Supervisor");
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 200, -1));
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 200, -1));
 
         jLabel3.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 102, 102));
         jLabel3.setText("Employee Number");
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 140, -1));
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 140, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel4.setText("Full Name");
-        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 80, -1));
+        jLabel4.setText("Last Name");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 80, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 102, 102));
         jLabel5.setText("Birthday");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 80, -1));
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 80, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 102, 102));
         jLabel6.setText("Address");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 80, -1));
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 80, -1));
 
         jLabel7.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 102, 102));
         jLabel7.setText("Phone Number");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 120, -1));
+        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 120, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 102, 102));
         jLabel8.setText("SSS Number");
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 130, -1));
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 130, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 102, 102));
         jLabel9.setText("Philhealth Number");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 140, -1));
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 140, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 102, 102));
         jLabel10.setText("Pagibig Number");
-        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 130, -1));
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 130, -1));
 
         jLabel11.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 102, 102));
         jLabel11.setText("Tax Identification Number");
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 200, -1));
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 200, -1));
 
         jLabel12.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 102, 102));
         jLabel12.setText("Status");
-        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 200, -1));
+        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 200, -1));
 
         jLabel13.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 102, 102));
         jLabel13.setText("Position");
-        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 200, -1));
+        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 200, -1));
 
         jTextFieldIS.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldIS.addActionListener(new java.awt.event.ActionListener() {
@@ -170,7 +172,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldISActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 180, -1));
+        jPanel4.add(jTextFieldIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 390, 180, -1));
 
         jTextFieldEnum.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldEnum.addActionListener(new java.awt.event.ActionListener() {
@@ -178,15 +180,15 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldEnumActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldEnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 210, -1));
+        jPanel4.add(jTextFieldEnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, 210, -1));
 
-        jTextFieldFullName.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
-        jTextFieldFullName.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldLastName.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        jTextFieldLastName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldFullNameActionPerformed(evt);
+                jTextFieldLastNameActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldFullName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 270, -1));
+        jPanel4.add(jTextFieldLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 270, -1));
 
         jTextFieldBirthday.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldBirthday.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +196,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldBirthdayActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldBirthday, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 270, -1));
+        jPanel4.add(jTextFieldBirthday, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 270, -1));
 
         jTextFieldAddress.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldAddress.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +204,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldAddressActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 270, -1));
+        jPanel4.add(jTextFieldAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 270, -1));
 
         jTextFieldPhoneN.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldPhoneN.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +212,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldPhoneNActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldPhoneN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 240, -1));
+        jPanel4.add(jTextFieldPhoneN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 240, -1));
 
         jTextFieldSSSN.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldSSSN.addActionListener(new java.awt.event.ActionListener() {
@@ -218,7 +220,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldSSSNActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldSSSN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 240, -1));
+        jPanel4.add(jTextFieldSSSN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 240, -1));
 
         jTextFieldPhilN.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldPhilN.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +228,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldPhilNActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldPhilN, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 220, -1));
+        jPanel4.add(jTextFieldPhilN, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 220, -1));
 
         jTextFieldPagN.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldPagN.addActionListener(new java.awt.event.ActionListener() {
@@ -234,7 +236,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldPagNActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldPagN, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 220, -1));
+        jPanel4.add(jTextFieldPagN, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 220, -1));
 
         jTextFieldTaxID.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldTaxID.addActionListener(new java.awt.event.ActionListener() {
@@ -242,7 +244,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldTaxIDActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldTaxID, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 170, -1));
+        jPanel4.add(jTextFieldTaxID, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 170, -1));
 
         jTextFieldStat.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldStat.addActionListener(new java.awt.event.ActionListener() {
@@ -250,7 +252,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldStatActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldStat, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 310, -1));
+        jPanel4.add(jTextFieldStat, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 310, -1));
 
         jTextFieldPOS.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldPOS.addActionListener(new java.awt.event.ActionListener() {
@@ -258,12 +260,12 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jTextFieldPOSActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldPOS, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 320, 290, -1));
+        jPanel4.add(jTextFieldPOS, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 290, -1));
 
         jButtonClear.setBackground(new java.awt.Color(255, 102, 102));
         jButtonClear.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jButtonClear.setText("CLEAR");
-        jPanel4.add(jButtonClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, -1, -1));
+        jPanel4.add(jButtonClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, -1, -1));
 
         jButtonAdd.setBackground(new java.awt.Color(255, 102, 102));
         jButtonAdd.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
@@ -273,17 +275,17 @@ public class DashboardFrame extends javax.swing.JFrame {
                 jButtonAddActionPerformed(evt);
             }
         });
-        jPanel4.add(jButtonAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 70, -1));
+        jPanel4.add(jButtonAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, 70, -1));
 
         jButtonUpdate.setBackground(new java.awt.Color(255, 102, 102));
         jButtonUpdate.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jButtonUpdate.setText("UPDATE");
-        jPanel4.add(jButtonUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, -1, -1));
+        jPanel4.add(jButtonUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, -1, -1));
 
         jButtonDelete.setBackground(new java.awt.Color(255, 102, 102));
         jButtonDelete.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jButtonDelete.setText("DELETE");
-        jPanel4.add(jButtonDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, -1, -1));
+        jPanel4.add(jButtonDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, -1, -1));
 
         jTableinfo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -329,9 +331,22 @@ public class DashboardFrame extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTableinfo);
 
-        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 700, -1));
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 700, 450));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 1120, 450));
+        jLabel14.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 102, 102));
+        jLabel14.setText("First Name");
+        jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 80, -1));
+
+        jTextFieldFirstName.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        jTextFieldFirstName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldFirstNameActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jTextFieldFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 270, -1));
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1130, 470));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 609));
 
@@ -347,9 +362,9 @@ public class DashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldEnumActionPerformed
 
-    private void jTextFieldFullNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFullNameActionPerformed
+    private void jTextFieldLastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldLastNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldFullNameActionPerformed
+    }//GEN-LAST:event_jTextFieldLastNameActionPerformed
 
     private void jTextFieldBirthdayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldBirthdayActionPerformed
         // TODO add your handling code here:
@@ -391,6 +406,10 @@ public class DashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:  
   
     }//GEN-LAST:event_jButtonAddActionPerformed
+
+    private void jTextFieldFirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFirstNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldFirstNameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -439,6 +458,7 @@ public class DashboardFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -457,8 +477,9 @@ public class DashboardFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldAddress;
     private javax.swing.JTextField jTextFieldBirthday;
     private javax.swing.JTextField jTextFieldEnum;
-    private javax.swing.JTextField jTextFieldFullName;
+    private javax.swing.JTextField jTextFieldFirstName;
     private javax.swing.JTextField jTextFieldIS;
+    private javax.swing.JTextField jTextFieldLastName;
     private javax.swing.JTextField jTextFieldPOS;
     private javax.swing.JTextField jTextFieldPagN;
     private javax.swing.JTextField jTextFieldPhilN;
