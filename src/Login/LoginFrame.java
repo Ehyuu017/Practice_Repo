@@ -166,7 +166,7 @@ public class LoginFrame extends javax.swing.JFrame {
         String username = jTextFieldUser.getText();
         String password = jPasswordField1.getText();
         
-        Bal balObj = new Bal();
+        LoginBal balObj = new LoginBal();
         balObj.checkLogin(username, password);
        
         DashboardFrame dashObj = new DashboardFrame();

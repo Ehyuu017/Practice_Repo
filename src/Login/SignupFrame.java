@@ -196,9 +196,9 @@ public class SignupFrame extends javax.swing.JFrame {
         String username = jTextFieldUser.getText();
         String password = jPasswordField1.getText();
         
-        Bean beanObj = new Bean(fullname, username, password);
+        LoginBean beanObj = new LoginBean(fullname, username, password);
         
-        Bal balObj = new Bal();
+        LoginBal balObj = new LoginBal();
         balObj.insertDataSignup(beanObj);
         
         

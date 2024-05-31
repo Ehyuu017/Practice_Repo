@@ -16,9 +16,9 @@ import java.sql.SQLException;
  *
  * @author Nesty
  */
-public class Bal {
+public class LoginBal {
     
-    public void insertDataSignup(Bean beanObj){
+    public void insertDataSignup(LoginBean beanObj){
     
         try {
             //insert query

@@ -8,13 +8,13 @@ package Login;
  *
  * @author Nesty
  */
-public class Bean {
+public class LoginBean {
     
     private String fullname;
     private String username;
     private String password;
 
-    public Bean(String fullname, String username, String password) {
+    public LoginBean(String fullname, String username, String password) {
         this.fullname = fullname;
         this.username = username;
         this.password = password;

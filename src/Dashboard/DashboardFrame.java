@@ -54,7 +54,7 @@ public class DashboardFrame extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jTextFieldIS = new javax.swing.JTextField();
-        jTextFieldEnum1 = new javax.swing.JTextField();
+        jTextFieldEnum = new javax.swing.JTextField();
         jTextFieldFullName = new javax.swing.JTextField();
         jTextFieldBirthday = new javax.swing.JTextField();
         jTextFieldAddress = new javax.swing.JTextField();
@@ -172,13 +172,13 @@ public class DashboardFrame extends javax.swing.JFrame {
         });
         jPanel4.add(jTextFieldIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 180, -1));
 
-        jTextFieldEnum1.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
-        jTextFieldEnum1.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldEnum.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
+        jTextFieldEnum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldEnum1ActionPerformed(evt);
+                jTextFieldEnumActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextFieldEnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 210, -1));
+        jPanel4.add(jTextFieldEnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 210, -1));
 
         jTextFieldFullName.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jTextFieldFullName.addActionListener(new java.awt.event.ActionListener() {
@@ -268,6 +268,11 @@ public class DashboardFrame extends javax.swing.JFrame {
         jButtonAdd.setBackground(new java.awt.Color(255, 102, 102));
         jButtonAdd.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jButtonAdd.setText("ADD");
+        jButtonAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAddActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButtonAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 70, -1));
 
         jButtonUpdate.setBackground(new java.awt.Color(255, 102, 102));
@@ -338,9 +343,9 @@ public class DashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldISActionPerformed
 
-    private void jTextFieldEnum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEnum1ActionPerformed
+    private void jTextFieldEnumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEnumActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldEnum1ActionPerformed
+    }//GEN-LAST:event_jTextFieldEnumActionPerformed
 
     private void jTextFieldFullNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFullNameActionPerformed
         // TODO add your handling code here:
@@ -381,6 +386,11 @@ public class DashboardFrame extends javax.swing.JFrame {
     private void jTextFieldPOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldPOSActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldPOSActionPerformed
+
+    private void jButtonAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddActionPerformed
+        // TODO add your handling code here:  
+  
+    }//GEN-LAST:event_jButtonAddActionPerformed
 
     /**
      * @param args the command line arguments
@@ -446,7 +456,7 @@ public class DashboardFrame extends javax.swing.JFrame {
     private javax.swing.JTable jTableinfo;
     private javax.swing.JTextField jTextFieldAddress;
     private javax.swing.JTextField jTextFieldBirthday;
-    private javax.swing.JTextField jTextFieldEnum1;
+    private javax.swing.JTextField jTextFieldEnum;
     private javax.swing.JTextField jTextFieldFullName;
     private javax.swing.JTextField jTextFieldIS;
     private javax.swing.JTextField jTextFieldPOS;
