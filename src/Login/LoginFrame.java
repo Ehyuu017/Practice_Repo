@@ -5,6 +5,7 @@
 package Login;
 import Dashboard.DashboardFrame;
 import java.awt.Toolkit;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -167,11 +168,18 @@ public class LoginFrame extends javax.swing.JFrame {
         String password = jPasswordField1.getText();
         
         LoginBal balObj = new LoginBal();
-        balObj.checkLogin(username, password);
-       
+        
+       if (balObj.checkLogin(username, password)){
+            
         DashboardFrame dashObj = new DashboardFrame();
         dashObj.show();
         this.hide();
+        
+        }else{
+         JOptionPane.showMessageDialog(null, "Invalid Username or Password, Try Again...");    
+        }
+       
+        
         
         
     }//GEN-LAST:event_jButtonLoginActionPerformed

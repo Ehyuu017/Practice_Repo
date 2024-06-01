@@ -39,7 +39,7 @@ public class LoginBal {
         
     }
     
-    public void checkLogin(String Username, String Password){
+    public boolean checkLogin(String Username, String Password){
     
         try {
             
@@ -48,9 +48,10 @@ public class LoginBal {
             ResultSet rs = st.executeQuery(query);
             
             if (rs.next()) {
+                return true;
                 
             }else{
-           JOptionPane.showMessageDialog(null, "Invalid Username or Password, Try Again...");
+                return false;
             }
             
             
@@ -59,7 +60,7 @@ public class LoginBal {
             JOptionPane.showMessageDialog(null, "" +e);
             
         }
-           
+            return false;    
     }
     
 }
